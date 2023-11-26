@@ -1,0 +1,15 @@
+[versions]
+androidGradlePlugin = "8.1.4"
+kotlin = "1.9.20"
+googleClient = "2.2.0"
+googleOAuthClient = "1.34.1"
+googleApiServicesSheets = "v4-rev20230815-2.0.0"
+
+[libraries]
+android-gradlePlugin-api = { group = "com.android.tools.build", name = "gradle-api", version.ref = "androidGradlePlugin" }
+google-api-client = { group = "com.google.api-client", name = "google-api-client", version.ref = "googleClient" }
+google-oauth-client-jetty = { group = "com.google.oauth-client", name = "google-oauth-client-jetty", version.ref = "googleOAuthClient" }
+google-api-services-sheets = { group = "com.google.apis", name = "google-api-services-sheets", version.ref = "googleApiServicesSheets" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
